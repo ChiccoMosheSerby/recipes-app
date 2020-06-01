@@ -1,13 +1,30 @@
 
+/* preventing safari default style------------- */
+input, textarea,div {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    line-height: normal ;
+  }
+  
+  *{
+    -webkit-appearance: none;
+  }
+  
+
+
+
 .searchBar,.searchBtn{
     padding:10px;
     border:solid 1px rgba(177, 177, 177, 0.541);
     margin:20px;
     outline: none;
     cursor: pointer;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     background-color: rgb(252, 251, 191);
     border-radius: 10px;
     font-weight: bold;
@@ -28,9 +45,12 @@
     transform: translate(-50%);
     background-color: #ff6347;
     width: 754px;
-    -webkit-box-shadow: 2px 9px 5px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 9px 5px -4px rgba(0,0,0,0.75);
-    box-shadow: 2px 9px 5px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 
@@ -45,6 +65,9 @@ h1{
     width: 100%;
     background-color: rgba(255, 238, 0, 0.808);
     margin-top:0;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
 }
 .resipesWrapper{
     display:flex;
@@ -92,7 +115,6 @@ body{
     margin: auto;
     text-align: center;
     min-height: 100vh;
-    max-width: 90vw;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
@@ -102,8 +124,26 @@ body{
     position: fixed;
     bottom: 50px;
     right:50px;
+
+
 }
 
+.logoBottom{
+    position: fixed;
+    top: 50px;
+    left:50px;
+
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    padding: 0;  
+    margin: 0;
+  
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+        background: #4bbfce;
+}
 .topImg{
     width: 200px;
     height: auto;
@@ -111,9 +151,9 @@ body{
     padding: 0;  
     margin: 0;
   
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     background: #4bbfce;
 }
 
@@ -123,31 +163,96 @@ body{
     height: auto;
 }
 
+
 .startH1{
     padding:10px;
     width: fit-content;
-    background:none;
     border-bottom: 0;
     border-radius: 15px;
-    /* border:solid rgba(255, 255, 255, 0.171) 1px; */
+    margin: auto;
+    margin-bottom: 10px;
 
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.startH2{
+    font-size: 2.8rem;
+    /* border:solid rgba(68, 0, 0, 0.329) 1px; */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    background:rgba(255, 255, 255, 0.075);
+    padding:20px;
+    border-radius: 10px;
 
 }
 .dishImg{
-    border:solid 1px rgba(255, 255, 255, 0.445);
+    border:solid 1px rgba(29, 29, 29, 0.24);
     border-radius: 15px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
 }
-@media only screen and (max-width: 800px){
+
+
+
+.close{
+    height: fit-content;
+    
+    opacity: 1;
+    -webkit-transition: opacity .4s ease;
+       -moz-transition: opacity .4s ease;
+         -o-transition: opacity .4s ease;
+            transition: opacity .4s ease;
+
+}
+.open{
+    height: fit-content;
+
+    opacity: 1;
+    -webkit-transition: opacity .4s ease;
+       -moz-transition: opacity .4s ease;
+         -o-transition: opacity .4s ease;
+            transition: opacity .4s ease;
+
+}
+
+.descBtn{
+    height: 0;
+    display: none;
+    visibility: hidden;
+}
+@media only screen and (max-width: 700px){
+
+    
+.mainReciWrap{
+    background-color: #fffcd0ce;
+    margin-top:10px;
+   border-radius:0;
+   border: rgba(255, 255, 255, 0.411) 1px solid;
+}
+.resipesWrapper{
+    width: 100%;
+}
+    .close{
+        height: 0;
+        /* display: none; */
+        visibility: hidden;
+        transition: height 0.4s linear;
+
+
+        opacity: 0;
+    -webkit-transition: opacity .4s ease;
+       -moz-transition: opacity .4s ease;
+         -o-transition: opacity .4s ease;
+            transition: opacity .4s ease;
+    }
+
     .dishImg{
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    width: 100%;
+    margin:0;
     }
     .reci{
         display: grid;
@@ -155,6 +260,8 @@ body{
         /* border: solid red 1px; */
         justify-items: center;
         align-items: flex-start;
+        width: 100%;
+        border-radius: 0;
     }
     .App{
         width: 100vw;
@@ -166,9 +273,20 @@ body{
         bottom: 5px;
         right:5px;
     }
-    
+    .logoBottom{
+        height: 0;
+        display: none;
+        visibility: hidden;
+    }
     .topImg{
         width: 50px;
         height: auto;
     }
+
+    .descBtn{
+        height: fit-content;
+        display: block;
+        visibility: visible;
+    }
 }
+
