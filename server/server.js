@@ -48,7 +48,7 @@ app.get('/shareResipe/:word/:id', function (req, res) {
                 
                                     ${recipeArray}
                                     </br>
-                                    <a style="font-size:40px; margin:100px; padding:20px; color:#ddcead;" href="https://recipes-app-prod.herokuapp.com">Go to:  Recipes App! </br>
+                                    <a style="font-size:40px; margin:20px; padding:20px; color:#ddcead;" href="https://recipes-app-prod.herokuapp.com">Go to:  Recipes App! </br>
                                     <img style="margin:auto; border-radius:15px; width:300px; height:auto; border:1px solid #fafafa65;" src='/img/sticker-bon-appetit.png' />
                                     </a>
                                     
