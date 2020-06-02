@@ -223,6 +223,54 @@ body{
     display: none;
     visibility: hidden;
 }
+
+.shareDiv{
+    background-color: #3b5998;
+    text-align: center;
+    padding:10px;
+    color:white;
+    margin:auto;
+    border-radius: 10px;
+    width: fit-content;
+    /* margin-top:5px;
+    min-width: 100px; */
+    outline: none;
+    border:none;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+
+}
+.shareDivWTS{
+    background-color: #00e676;
+    text-align: center;
+    padding:10px;
+    color:white;
+    margin:auto;
+    border-radius: 10px;
+    width: fit-content;
+    /* margin-top:5px;
+    min-width: 100px; */
+    outline: none;
+    border:none;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+
+}
+
+.btns{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+a,a:active,a:visited{
+    text-decoration: none;
+    color:white;
+}
+
 @media only screen and (max-width: 700px){
     h1{
         border-top-left-radius:0;
