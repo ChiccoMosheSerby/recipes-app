@@ -2,15 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Resipe from './components/Resipe/Resipe';
 
-
-
 const App = () => {
 
   const [resipes, setResipes] = useState([]);
   const [searchText, setSearchText] = useState('');
   // const [hostVar, setHostVar] = useState('http://localhost:4005');
   const [hostVar, setHostVar] = useState('');
-
+  const [imageShared, setImageShared] = useState('');
 
 
   useEffect(() => {
@@ -70,9 +68,10 @@ const App = () => {
             <div className="resipesWrapper">
               {
                 resipes.map((singleResepi, index) => (
-                  <Resipe key={searchText+index} image={singleResepi.recipe.image} title={singleResepi.recipe.label} calories={singleResepi.recipe.calories}
+                  <Resipe recipeId={index} key={index} image={singleResepi.recipe.image} title={singleResepi.recipe.label} calories={singleResepi.recipe.calories}
                     ingredientLines={singleResepi.recipe.ingredientLines}
-                    healthLabels={singleResepi.recipe.healthLabels} />
+                    healthLabels={singleResepi.recipe.healthLabels}
+                    searchWord={searchText} />
 
 
                 ))
@@ -82,8 +81,9 @@ const App = () => {
             <img className="logoBottom" src="/img/sticker-bon-appetit.png" alt="sticker-bon-appetit" />
 
           </div>
-          
+
       }
+
 
     </div >
 
