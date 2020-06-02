@@ -45,7 +45,7 @@ const App = () => {
       {
         resipes == '' ?
           <div className="start">
-            <h2 className="startH1">Enter keywords</h2>
+            <h2 className="startH1">Enter (English) keywords</h2>
             <h1 className="startH1 startH2">Get Recipes</h1>
             <img className="bonAppetit" src="/img/sticker-bon-appetit.png" alt="sticker-bon-appetit" />
             <form className="searchFprm" onSubmit={updateSearch}>
