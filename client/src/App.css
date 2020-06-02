@@ -109,6 +109,8 @@ body{
     background: -webkit-linear-gradient(130deg, rgba(163,0,0,1) 43%, rgba(217,203,10,1) 80%);
     background: linear-gradient(130deg, rgba(163,0,0,1) 43%, rgba(217,203,10,1) 80%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
+
+    word-break: break-word;
 }
 .App{
     width: 750px;
