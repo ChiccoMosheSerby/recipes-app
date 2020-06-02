@@ -13,7 +13,6 @@ app.use(bodyParser.json());
 const appId = 'd12e22b2';
 const appKey = '27301a57cbfe5f373c242b8e58e39314';
 
-// fetch(`https://api.edamam.com/api/nutrition-details?app_id=${appId}&app_key=${appKey}`)
 
 app.post('/getResipes', function (req, res) {
     fetch(`https://api.edamam.com/search?q=${req.body.searchText}&app_id=${appId}&app_key=${appKey}`)

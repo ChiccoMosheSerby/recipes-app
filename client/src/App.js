@@ -8,8 +8,8 @@ const App = () => {
 
   const [resipes, setResipes] = useState([]);
   const [searchText, setSearchText] = useState('');
-  const [hostVar, setHostVar] = useState('http://localhost:4005');
-  // const [hostVar, setHostVar] = useState('');
+  // const [hostVar, setHostVar] = useState('http://localhost:4005');
+  const [hostVar, setHostVar] = useState('');
 
 
 
@@ -24,11 +24,6 @@ const App = () => {
   }
 
   const getResipes = async () => {
-     
-
-  //  const t = await fetch("https://api.edamam.com/api/nutrition-data?app_id=d12e22b2&app_key=27301a57cbfe5f373c242b8e58e39314&ingr=1%20large%20apple");
-  //  const tt = await t.json();
-  //  console.dir(tt)
 
     const response = await fetch(hostVar + "/getResipes",
       {
@@ -75,7 +70,7 @@ const App = () => {
             <div className="resipesWrapper">
               {
                 resipes.map((singleResepi, index) => (
-                  <Resipe key={index} image={singleResepi.recipe.image} title={singleResepi.recipe.label} calories={singleResepi.recipe.calories}
+                  <Resipe key={searchText+index} image={singleResepi.recipe.image} title={singleResepi.recipe.label} calories={singleResepi.recipe.calories}
                     ingredientLines={singleResepi.recipe.ingredientLines}
                     healthLabels={singleResepi.recipe.healthLabels} />
 
