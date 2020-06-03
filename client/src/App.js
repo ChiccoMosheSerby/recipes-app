@@ -8,7 +8,6 @@ const App = () => {
   const [searchText, setSearchText] = useState('');
   // const [hostVar, setHostVar] = useState('http://localhost:4005');
   const [hostVar, setHostVar] = useState('');
-  const [imageShared, setImageShared] = useState('');
 
 
   useEffect(() => {
@@ -34,7 +33,7 @@ const App = () => {
     )
 
     const data = await response.json();
-    console.dir(data.hits);
+    // console.dir(data.hits);
     setResipes(data.hits);
   }
 
@@ -43,7 +42,7 @@ const App = () => {
   return (
     <div className='App'>
       {
-        resipes == '' ?
+        resipes=='' ?
           <div className="start">
             <h2 className="startH1">Enter (English) keywords</h2>
             <h1 className="startH1 startH2">Get Recipes</h1>
@@ -67,6 +66,7 @@ const App = () => {
             </form>
             <div className="resipesWrapper">
               {
+                resipes?
                 resipes.map((singleResepi, index) => (
                   <Resipe recipeId={index} key={index} image={singleResepi.recipe.image} title={singleResepi.recipe.label} calories={singleResepi.recipe.calories}
                     ingredientLines={singleResepi.recipe.ingredientLines}
@@ -75,6 +75,8 @@ const App = () => {
 
 
                 ))
+                :
+                null
               }
             </div>
             <a className="top" href="#top"><img className="topImg" src="/img/smooth_scroll_to_top.png" alt="scrool top img" /> </a>
@@ -84,6 +86,8 @@ const App = () => {
 
       }
 
+
+<p>&#169; CMS -ChiccoMosheSerby</p>
 
     </div >
 

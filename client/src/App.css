@@ -166,7 +166,10 @@ body{
     margin: auto;
     height: auto;
 }
-
+.start{
+border:solid rgba(8, 8, 8, 0.226) 1px;
+border-radius: 15px;
+}
 
 .startH1{
     padding:10px;
@@ -273,7 +276,10 @@ a,a:active,a:visited{
     color:white;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
+    .start{
+        border:none;
+        }
     h1{
         border-top-left-radius:0;
         border-top-right-radius:0;

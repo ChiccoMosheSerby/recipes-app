@@ -33,12 +33,7 @@ const Resipe = ({ image, title, calories, ingredientLines, healthLabels, searchW
             }
         )
 
-        console.dir(response.image)
-
         const data = await response.json();
-
-        console.dir(data.image);
-
     }
 
     return (
@@ -67,6 +62,8 @@ const Resipe = ({ image, title, calories, ingredientLines, healthLabels, searchW
                 </div>
                 <div className={descClassName}>
                     <ul>
+                    <p style={{ fontWeight: 'bold' }}>Health Labels</p>
+
                         {!healthLabels ? null :
                             healthLabels.map((singleHealthLabels, index) => (
                                 <li key={index}>{singleHealthLabels}</li>
