@@ -43,7 +43,7 @@ input, textarea,div {
     top:0;
     left: 50%;
     transform: translate(-50%);
-    background-color: #ff6347;
+    background-color: #48bfcf;
     width: 754px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
@@ -63,7 +63,12 @@ h1{
     border-top-right-radius:15px;
     border-bottom: 2px solid #fafafa;
     width: 100%;
-    background-color: rgb(250, 236, 36);
+    
+    background: -moz-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
+    background: -webkit-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
+    background:linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
+
     margin-top:0;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
@@ -104,10 +109,11 @@ html {
     scroll-behavior: smooth;
   }
 body{
-    background: rgb(163,0,0);
-    background: -moz-linear-gradient(130deg, rgba(163,0,0,1) 43%, rgba(217,203,10,1) 80%);
-    background: -webkit-linear-gradient(130deg, rgba(163,0,0,1) 43%, rgba(217,203,10,1) 80%);
-    background: linear-gradient(130deg, rgba(163,0,0,1) 43%, rgba(217,203,10,1) 80%);
+    background: #af2f02;
+    
+    background: -moz-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
+    background: -webkit-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
+    background:linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
 
     word-break: break-word;
