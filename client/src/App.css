@@ -29,31 +29,55 @@ input, textarea,div {
     border-radius: 10px;
     font-weight: bold;
 
+    
+
 }
 
 .searchBar{
     cursor: text;
+
+    background: #dff8fc;
+    
+    background: -moz-linear-gradient(96deg, #dff8fc 8.43%, #ecf3a9 94.44%);
+    background: -webkit-linear-gradient(96deg, #dff8fc 8.43%, #ecf3a9 94.44%);
+    background:linear-gradient(96deg, #dff8fc 8.43%, #ecf3a9 94.44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
+}
+.searchBtn{
+background: #206d77;
+background: -moz-linear-gradient(96deg, #206d77 8.43%, #57e5f8 94.44%);
+background: -webkit-linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+background:linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
+color:white;
+
 }
 
 .searchBtn:hover{
     background-color: rgb(248, 246, 142);
+
+    background: #57e5f8;
+    
+background: -moz-linear-gradient(96deg, #57e5f8 8.43%, #206d77 94.44%);
+background: -webkit-linear-gradient(96deg, #57e5f8 8.43%, #206d77 94.44%);
+background:linear-gradient(96deg, #57e5f8 8.43%, #206d77 94.44%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
 }
 .topSearch{
     position: fixed;
     top:0;
     left: 50%;
     transform: translate(-50%);
-    background: #257c88;
+
     
-    background: -moz-linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
-    background: -webkit-linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
-    background:linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+    background: -moz-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
+    background: -webkit-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
+    background:linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
     width: 754px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
-
     /* border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px; */
 }
@@ -84,7 +108,7 @@ h1{
     flex-flow: column wrap;
     width:100%;
     margin: auto;
-    margin-top:77px;
+    margin-top:100px;
     justify-content: space-around;
 }
 
@@ -108,7 +132,7 @@ h1{
     background-color: #fffcd0ce;
     margin-top:10px;
    border-radius:15px;
-   border: rgba(255, 255, 255, 0.411) 1px solid;
+   /* border: rgba(255, 255, 255, 0.411) 1px solid; */
 }
 html {
     scroll-behavior: smooth;
@@ -154,10 +178,17 @@ body{
     padding: 0;  
     margin: 0;
   
+    background: #206d77;
+    
+    background: -moz-linear-gradient(96deg, #206d77 8.43%, #57e5f8 94.44%);
+    background: -webkit-linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+    background:linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
+
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
-        background: #4bbfce;
+        /* background: #4bbfce; */
 }
 .topImg{
     width: 200px;
@@ -169,7 +200,13 @@ body{
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
-    background: #4bbfce;
+    
+    background: #206d77;
+    
+background: -moz-linear-gradient(96deg, #206d77 8.43%, #57e5f8 94.44%);
+background: -webkit-linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+background:linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
 }
 
 .bonAppetit{
@@ -178,8 +215,10 @@ body{
     height: auto;
 }
 .start{
-border:solid rgba(8, 8, 8, 0.226) 1px;
+border:solid rgba(8, 8, 8, 0.096) 1px;
 border-radius: 15px;
+
+
 }
 
 .startH1{
@@ -198,10 +237,16 @@ border-radius: 15px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
-    background:rgba(255, 255, 255, 0.075);
+    /* background:rgba(255, 255, 255, 0.075); */
     padding:20px;
     border-radius: 10px;
-
+    
+    background: #c7641e;
+    
+    background: -moz-linear-gradient(96deg, #c7641e 8.43%, #F8CE57 94.44%);
+    background: -webkit-linear-gradient(96deg, #c7641e 8.43%, #F8CE57 94.44%);
+    background:linear-gradient(96deg, #c7641e 8.43%, #F8CE57 94.44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
 }
 .dishImg{
     border:solid 1px rgba(29, 29, 29, 0.24);
@@ -240,15 +285,18 @@ border-radius: 15px;
     visibility: hidden;
 
 
-    background: #257c88;
+    background: #206d77;
     
-    background: -moz-linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+    background: -moz-linear-gradient(96deg, #206d77 8.43%, #57e5f8 94.44%);
     background: -webkit-linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
     background:linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
 
     color: white;
 }
+
+
+
 
 .shareDiv{
     background-color: #3b5998;
@@ -297,6 +345,8 @@ a,a:active,a:visited{
     color:white;
 }
 
+
+
 @media only screen and (max-width: 800px){
     .start{
         border:none;
@@ -308,14 +358,16 @@ a,a:active,a:visited{
     
 .mainReciWrap{
     background-color: #fffcd0ce;
-    margin-top:70px;
+    /* margin-top:20px; */
    border-radius:0;
-   border: rgba(255, 255, 255, 0.411) 1px solid;
+   /* border: rgba(255, 255, 255, 0.411) 1px solid; */
 }
 .resipesWrapper{
     width: 100%;
     padding:0;
     margin:0;
+    margin-top:100px;
+
 }
     .close{
         height: 0;
@@ -354,6 +406,7 @@ a,a:active,a:visited{
     }
 .topSearch{
     width: 100%;
+
 }
     .top{
         bottom: 5px;

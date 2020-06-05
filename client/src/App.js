@@ -8,7 +8,7 @@ const App = () => {
   const [searchText, setSearchText] = useState('');
   // const [hostVar, setHostVar] = useState('http://localhost:4005');
   const [hostVar, setHostVar] = useState('');
-
+// 
 
   useEffect(() => {
     getResipes();
@@ -46,13 +46,14 @@ const App = () => {
           <div className="start">
             <h2 className="startH1">Enter (English) keywords</h2>
             <h1 className="startH1 startH2">Get Recipes</h1>
-            <img className="bonAppetit" src="/img/sticker-bon-appetit.png" alt="sticker-bon-appetit" />
             <form className="searchFprm" onSubmit={updateSearch}>
               <input name="searchBar" className="searchBar" type="text" />
               <button className="searchBtn" type="submit" >
                 Search
         </button>
             </form>
+            <img className="bonAppetit" src="/img/sticker-bon-appetit.png" alt="sticker-bon-appetit" />
+
             <img className="logoBottom" src="/img/sticker-bon-appetit.png" alt="sticker-bon-appetit" />
 
           </div>
