@@ -108,7 +108,7 @@ h1{
     flex-flow: column wrap;
     width:100%;
     margin: auto;
-    margin-top:100px;
+    margin-top:70px;
     justify-content: space-around;
 }
 
@@ -129,7 +129,13 @@ h1{
 }
 
 .mainReciWrap{
-    background-color: #fffcd0ce;
+    background: #f7e5b1;
+    
+        
+    background: -moz-linear-gradient(96deg, #f7e5b1 8.43%, #f8f4e9 94.44%);
+    background: -webkit-linear-gradient(96deg, #f7e5b1 8.43%, #f8f4e9 94.44%);
+    background:linear-gradient(96deg, #f7e5b1 8.43%, #f8f4e9 94.44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
     margin-top:10px;
    border-radius:15px;
    /* border: rgba(255, 255, 255, 0.411) 1px solid; */
@@ -345,7 +351,42 @@ a,a:active,a:visited{
     color:white;
 }
 
+@keyframes btnsAnimationHover {
+    0% {
+        background: #206d77;
+    
+       
+   }
+   25%{
+    background: rgb(47, 157, 172);
 
+   }
+   50%{
+    background: #35b4c5;
+    
+
+   }
+   75%{
+    background: #26818d;
+    
+
+   }
+        100%{
+            background: #206d77;
+
+        }
+
+  }
+  
+  /* The element to apply the animation to */
+  .animated {
+
+    animation-name: btnsAnimationHover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: linear;
+}
 
 @media only screen and (max-width: 800px){
     .start{
@@ -354,8 +395,12 @@ a,a:active,a:visited{
     h1{
         border-top-left-radius:0;
         border-top-right-radius:0;
+
     }
-    
+    .startH1,.startH2{
+        width:calc(100vw - 80px);
+
+    }
 .mainReciWrap{
     background-color: #fffcd0ce;
     /* margin-top:20px; */
@@ -366,7 +411,8 @@ a,a:active,a:visited{
     width: 100%;
     padding:0;
     margin:0;
-    margin-top:100px;
+    margin-top:70px;
+
 
 }
     .close{
@@ -428,7 +474,13 @@ a,a:active,a:visited{
         visibility: visible;
     }
 
+.searchForm{
+   display:flex;
+   flex-direction: column;
+   width:calc(100vw - 80px);
+   margin:auto;
 
+}
 
 
     input[type="color"],

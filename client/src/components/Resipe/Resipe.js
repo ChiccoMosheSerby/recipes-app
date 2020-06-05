@@ -46,7 +46,7 @@ const Resipe = ({ image, title, calories, ingredientLines, healthLabels, searchW
                 <div>
                     <img className="dishImg" src={image} alt={title} />
                     <div className="btns">
-                        <button className="searchBtn descBtn" onClick={handleDescClassName}>Description</button>
+                        <button className="searchBtn descBtn animated" onClick={handleDescClassName}>Description</button>
                         <button className="shareDiv">
                             <ShareLink link={`https://recipes-app-prod.herokuapp.com/shareResipe/${searchWord}/${recipeId}`}>
                                 {link => (

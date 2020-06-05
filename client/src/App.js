@@ -46,9 +46,9 @@ const App = () => {
           <div className="start">
             <h2 className="startH1">Enter (English) keywords</h2>
             <h1 className="startH1 startH2">Get Recipes</h1>
-            <form className="searchFprm" onSubmit={updateSearch}>
+            <form className="searchForm" onSubmit={updateSearch}>
               <input name="searchBar" className="searchBar" type="text" />
-              <button className="searchBtn" type="submit" >
+              <button className="searchBtn animated" type="submit" >
                 Search
         </button>
             </form>
@@ -61,7 +61,7 @@ const App = () => {
           <div id="top">
             <form className="searchFprm topSearch" onSubmit={updateSearch}>
               <input name="searchBar" className="searchBar" type="text" />
-              <button className="searchBtn" type="submit" >
+              <button className="searchBtn animated" type="submit" >
                 Search
     </button>
             </form>
