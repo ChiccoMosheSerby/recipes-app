@@ -88,7 +88,7 @@ const App = () => {
       }
 
 
-<p>&#169; CMS -ChiccoMosheSerby</p>
+<p>&#169; CMS - ChiccoMosheSerby</p>
 
     </div >
 

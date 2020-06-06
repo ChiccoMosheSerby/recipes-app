@@ -36,12 +36,7 @@ input, textarea,div {
 .searchBar{
     cursor: text;
 
-    background: #dff8fc;
-    
-    background: -moz-linear-gradient(96deg, #dff8fc 8.43%, #ecf3a9 94.44%);
-    background: -webkit-linear-gradient(96deg, #dff8fc 8.43%, #ecf3a9 94.44%);
-    background:linear-gradient(96deg, #dff8fc 8.43%, #ecf3a9 94.44%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
+   background:white;
 }
 .searchBtn{
 background: #206d77;
@@ -70,10 +65,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endCo
     transform: translate(-50%);
 
     
-    background: -moz-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
-    background: -webkit-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
-    background:linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
+    background: -moz-linear-gradient(96deg, #ff73448e 8.43%, #f3eee1 94.44%);
+    background: -webkit-linear-gradient(96deg, #ff73448e 8.43%, #f3eee1 94.44%);
+    background:linear-gradient(96deg, #ff73448e 8.43%, #f3eee1 94.44%);
     width: 754px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
@@ -90,18 +84,18 @@ ul{
 h1{
     border-top-left-radius:15px;
     border-top-right-radius:15px;
-    border-bottom: 2px solid #fafafa;
+    /* border-bottom: 2px solid #f7c0ad; */
     width: 100%;
     
-    background: -moz-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
-    background: -webkit-linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
-    background:linear-gradient(96deg, #af2f02 8.43%, #F8CE57 94.44%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
+    /* background: -moz-linear-gradient(96deg, #49c4d5 8.43%, #f3eee1 94.44%);
+    background: -webkit-linear-gradient(96deg, #49c4d5 8.43%, #f3eee1 94.44%);
+    background:linear-gradient(96deg, #49c4d5 8.43%, #f3eee1 94.44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1); */
 
     margin-top:0;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    /* -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10); */
 }
 .resipesWrapper{
     display:flex;
@@ -129,13 +123,9 @@ h1{
 }
 
 .mainReciWrap{
-    background: #f7e5b1;
-    
-        
-    background: -moz-linear-gradient(96deg, #f7e5b1 8.43%, #f8f4e9 94.44%);
-    background: -webkit-linear-gradient(96deg, #f7e5b1 8.43%, #f8f4e9 94.44%);
-    background:linear-gradient(96deg, #f7e5b1 8.43%, #f8f4e9 94.44%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
+    background: -moz-linear-gradient(96deg, #ff73448e 8.43%, #f3eee1 94.44%);
+    background: -webkit-linear-gradient(96deg, #ff73448e 8.43%, #f3eee1 94.44%);
+    background:linear-gradient(96deg, #ff73448e 8.43%, #f3eee1 94.44%);
     margin-top:10px;
    border-radius:15px;
    /* border: rgba(255, 255, 255, 0.411) 1px solid; */
@@ -144,11 +134,11 @@ html {
     scroll-behavior: smooth;
   }
 body{
-    background: #c7641e;
+    background: #f39455;
     
-    background: -moz-linear-gradient(96deg, #c7641e 8.43%, #F8CE57 94.44%);
-    background: -webkit-linear-gradient(96deg, #c7641e 8.43%, #F8CE57 94.44%);
-    background:linear-gradient(96deg, #c7641e 8.43%, #F8CE57 94.44%);
+    background: -moz-linear-gradient(96deg, #f39455 8.43%, #F8CE57 94.44%);
+    background: -webkit-linear-gradient(96deg, #f39455 8.43%, #F8CE57 94.44%);
+    background:linear-gradient(96deg, #f39455 8.43%, #F8CE57 94.44%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);
 
     word-break: break-word;
