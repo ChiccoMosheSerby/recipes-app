@@ -7,7 +7,7 @@ const App = () => {
   const [resipes, setResipes] = useState([]);
   const [searchText, setSearchText] = useState('');
   // const [hostVar, setHostVar] = useState('http://localhost:4005');
-  const [hostVar, setHostVar] = useStasaste('');
+  const [hostVar, setHostVar] = useState('');
 // 
 
   useEffect(() => {
