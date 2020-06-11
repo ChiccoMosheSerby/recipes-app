@@ -7,7 +7,7 @@ const App = () => {
   const [resipes, setResipes] = useState([]);
   const [searchText, setSearchText] = useState('');
   // const [hostVar, setHostVar] = useState('http://localhost:4005');
-  const [hostVar, setHostVar] = useState('');
+  const [hostVar, setHostVar] = useStasaste('');
 // 
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const App = () => {
             </form>
             <div className="resipesWrapper">
               {
-                resipes?
+                resipes&&
                 resipes.map((singleResepi, index) => (
                   <Resipe recipeId={index} key={index} image={singleResepi.recipe.image} title={singleResepi.recipe.label} calories={singleResepi.recipe.calories}
                     ingredientLines={singleResepi.recipe.ingredientLines}
@@ -76,8 +76,7 @@ const App = () => {
 
 
                 ))
-                :
-                null
+             
               }
             </div>
             <a className="top" href="#top"><img className="topImg" src="/img/smooth_scroll_to_top.png" alt="scrool top img" /> </a>

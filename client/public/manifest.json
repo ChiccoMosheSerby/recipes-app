@@ -1,6 +1,6 @@
 {
-  "short_name": "recipes-app",
-  "name": "recipes-app",
+  "short_name": "recipes - PWA",
+  "name": "Progressive recipes Web App",
   "icons": [
     {
       "src": "favicon.ico",

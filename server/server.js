@@ -15,6 +15,12 @@ app.use(bodyParser.json());
 const appId = 'd12e22b2';
 const appKey = '27301a57cbfe5f373c242b8e58e39314';
 
+// app.get("/serviceWorker.js", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "public", "serviceWorker.js"));
+// });
+// app.get("*", function response(req, res) {
+//   res.sendFile(path.join(__dirname, "public", "index.html"));
+// });
 
 app.post('/getResipes', function (req, res) {
   fetch(`https://api.edamam.com/search?q=${req.body.searchText}&app_id=${appId}&app_key=${appKey}`)
