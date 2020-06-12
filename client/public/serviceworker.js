@@ -141,7 +141,7 @@
 // }
 
 const CACHE_NAME = "chache-v1";
-const urlsToCache = ['/', 'index.html', 'offline.html', 'index.css','App.css'];
+const urlsToCache = ['/', 'index.html', 'offline.html'];
 
 const self = this;
 
@@ -162,11 +162,22 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request)
             .then(() => {
-                return fetch(event.request) 
+                return fetch(event.request)
                     .catch(() => caches.match('offline.html'))
             })
     )
 });
+
+// self.addEventListener('fetch', function(e) {
+//     console.log(e.request.url);
+//     e.respondWith(
+//       caches.match(e.request)
+//       .then(function(response) {
+//         return response || fetch(e.request)
+//         .catch(() => caches.match('offline.html'));
+//       })
+//     );
+//   });
 
 // Activate the SW
 self.addEventListener('activate', (event) => {
@@ -176,11 +187,11 @@ self.addEventListener('activate', (event) => {
     event.waitUntil(
         caches.keys().then((cacheNames) => Promise.all(
             cacheNames.map((cacheName) => {
-                if(!cacheWhitelist.includes(cacheName)) {
+                if (!cacheWhitelist.includes(cacheName)) {
                     return caches.delete(cacheName);
                 }
             })
         ))
-            
+
     )
 });

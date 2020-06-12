@@ -493,3 +493,16 @@ a,a:active,a:visited{
     }
 }
 
+.add-button {
+padding:10px;
+margin:auto;
+color:white;
+font-weight: bold;
+background: #26818d;
+    border:none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: large;
+    width: fit-content;
+  }

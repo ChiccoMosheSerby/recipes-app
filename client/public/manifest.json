@@ -1,6 +1,11 @@
 {
   "short_name": "recipes - PWA",
   "name": "Progressive recipes Web App",
+  "scope": "/",
+  "serviceworker": {
+    "src": "serviceworker.js",
+    "scope": "/"
+  },
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,7 +23,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "orientation": "any",
+  "start_url": "https://recipes-app-prod.herokuapp.com//index.html",
+  // "start_url": "/index.html",
+
   "display": "standalone",
   "theme_color": "#257c88",
   "background_color": "#257c88"

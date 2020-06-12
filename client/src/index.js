@@ -15,3 +15,6 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unre gister();
+
+// Code to handle install prompt on desktop
+

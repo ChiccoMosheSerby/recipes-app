@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Resipe from './components/Resipe/Resipe';
+import InstallPWA from './components/InstallPWA';
+
+
 
 const App = () => {
 
@@ -8,7 +11,7 @@ const App = () => {
   const [searchText, setSearchText] = useState('');
   // const [hostVar, setHostVar] = useState('http://localhost:4005');
   const [hostVar, setHostVar] = useState('');
-// 
+  // 
 
   useEffect(() => {
     getResipes();
@@ -42,10 +45,11 @@ const App = () => {
   return (
     <div className='App'>
       {
-        resipes=='' ?
+        resipes == '' ?
           <div className="start">
             <h2 className="startH1">Enter (English) keywords</h2>
             <h1 className="startH1 startH2">Get Recipes</h1>
+            <InstallPWA />
             <form className="searchForm" onSubmit={updateSearch}>
               <input name="searchBar" className="searchBar" type="text" />
               <button className="searchBtn animated" type="submit" >
@@ -61,13 +65,16 @@ const App = () => {
           <div id="top">
             <form className="searchFprm topSearch" onSubmit={updateSearch}>
               <input name="searchBar" className="searchBar" type="text" />
+              
               <button className="searchBtn animated" type="submit" >
                 Search
     </button>
             </form>
+           
             <div className="resipesWrapper">
+           
               {
-                resipes&&
+                resipes &&
                 resipes.map((singleResepi, index) => (
                   <Resipe recipeId={index} key={index} image={singleResepi.recipe.image} title={singleResepi.recipe.label} calories={singleResepi.recipe.calories}
                     ingredientLines={singleResepi.recipe.ingredientLines}
@@ -76,7 +83,7 @@ const App = () => {
 
 
                 ))
-             
+
               }
             </div>
             <a className="top" href="#top"><img className="topImg" src="/img/smooth_scroll_to_top.png" alt="scrool top img" /> </a>
@@ -87,8 +94,8 @@ const App = () => {
       }
 
 
-<p>&#169; CMS - ChiccoMosheSerby</p>
-
+      <p>&#169; CMS - ChiccoMosheSerby</p>
+      
     </div >
 
   )
