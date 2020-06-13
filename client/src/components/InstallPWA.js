@@ -5,6 +5,7 @@ const InstallPWA = () => {
   const [supportsPWA, setSupportsPWA] = useState(false);
   const [promptInstall, setPromptInstall] = useState(null);
 
+
   useEffect(() => {
     const handler = e => {
       e.preventDefault();
@@ -16,9 +17,11 @@ const InstallPWA = () => {
 
     return () => window.removeEventListener("transitionend", handler);
   }, []);
-
-  const onClick = evt => {
-    evt.preventDefault();
+const onClick_installed = e =>{
+  alert('Thanks! Get Recipes Progressive App is intalled - pls check it on your device')
+}
+  const onClick = e => {
+    e.preventDefault();
     if (!promptInstall) {
       return;
     }
@@ -29,15 +32,26 @@ const InstallPWA = () => {
   }
   return (
     <div>
-      <button
-        className="installPwaBtn"
+      {!promptInstall ?
+            <button className="installPwaBtn"
+            id="setup_button"
+            aria-label="Install app"
+            title="Install app"
+            onClick={onClick}
+          >
+            Install App for free (PWA)
+        </button>
+        :
+        <button className="installPwaBtn"
         id="setup_button"
         aria-label="Install app"
         title="Install app"
-        onClick={onClick}
+        onClick={onClick_installed}
       >
-        Install App for free (PWA)
+        Progressive Get Recipes App
     </button>
+      }
+
     </div>
   );
 };

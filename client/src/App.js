@@ -63,7 +63,6 @@ const App = () => {
             <img className="bonAppetit" src="/img/sticker-bon-appetit.png" alt="sticker-bon-appetit" />
 
             <img className="logoBottom" src="/img/sticker-bon-appetit.png" alt="sticker-bon-appetit" />
-
           </div>
           :
           <div id="top">
@@ -100,6 +99,7 @@ const App = () => {
 
       <p>&#169; CMS - ChiccoMosheSerby</p>
       <InstallPWA />
+
 
     </div >
 
