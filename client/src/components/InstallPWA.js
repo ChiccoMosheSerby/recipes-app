@@ -29,15 +29,14 @@ const InstallPWA = () => {
   }
   return (
     <div>
-      <p>Progressive Web App.</p>
       <button
-        className="add-button"
+        className="installPwaBtn"
         id="setup_button"
         aria-label="Install app"
         title="Install app"
         onClick={onClick}
       >
-        Install App
+        Install App for free (PWA)
     </button>
     </div>
   );

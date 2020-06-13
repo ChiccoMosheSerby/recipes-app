@@ -60,7 +60,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endCo
 }
 .topSearch{
     position: fixed;
-    top:0;
+    top:60px;
     left: 50%;
     transform: translate(-50%);
 
@@ -102,7 +102,7 @@ h1{
     flex-flow: column wrap;
     width:100%;
     margin: auto;
-    margin-top:70px;
+    margin-top:130px;
     justify-content: space-around;
 }
 
@@ -153,6 +153,8 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
+
+  
 }
 
 .top{
@@ -378,7 +380,71 @@ a,a:active,a:visited{
     animation-timing-function: linear;
 }
 
+
+.installPwaBtn:hover{
+    opacity:1;
+
+}
+.installPwaBtn {
+    position: fixed;
+    top:0;
+    left:0;
+/* padding:10px; */
+margin:auto;
+color:white;
+font-weight: bold;
+background: #206d77;
+    opacity: 0.7;
+    background: -moz-linear-gradient(96deg, #206d77 8.43%, #57e5f8 94.44%);
+    background: -webkit-linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+    background:linear-gradient(96deg, #257c88 8.43%, #4ecfe0 94.44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a30000",endColorstr="#d9cb0a",GradientType=1);    border:none;
+    outline: none;
+        /* border-radius: 15px; */
+    cursor: pointer;
+    font-size: large;
+    width: 100%;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+animation-name: fadein;
+
+height: 60px;
+  }
+
+
+  @keyframes fadein {
+    0% {
+         opacity: 0;
+         height:100vh;
+    }
+    25% {
+        opacity: 0.3;
+       height: 70vh;
+   }
+   50% {
+    opacity: 0.6;
+   height: 50vh;
+}
+75% {
+    opacity: 0.9;
+   height: 60px;
+}
+    100%   { 
+        opacity: 1;
+        height: 60px;}
+  }
+
+
+
+  
 @media only screen and (max-width: 800px){
+    .installPwaBtn{
+        opacity:1;
+    
+    }
     .start{
         border:none;
         }
@@ -439,6 +505,7 @@ a,a:active,a:visited{
         width: 100vw;
         padding:0;
         margin:0;
+        margin-top: 60px;
     }
 .topSearch{
     width: 100%;
@@ -492,17 +559,3 @@ a,a:active,a:visited{
       font-size: 16px;
     }
 }
-
-.add-button {
-padding:10px;
-margin:auto;
-color:white;
-font-weight: bold;
-background: #26818d;
-    border:none;
-    outline: none;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: large;
-    width: fit-content;
-  }

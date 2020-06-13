@@ -12,7 +12,11 @@ const App = () => {
   // const [hostVar, setHostVar] = useState('http://localhost:4005');
   const [hostVar, setHostVar] = useState('');
   // 
-
+  useEffect(() => {
+    window.onload = function () {
+      document.body.className += " loaded";
+    }
+  })
   useEffect(() => {
     getResipes();
   }, [searchText])
@@ -49,7 +53,7 @@ const App = () => {
           <div className="start">
             <h2 className="startH1">Enter (English) keywords</h2>
             <h1 className="startH1 startH2">Get Recipes</h1>
-            <InstallPWA />
+      
             <form className="searchForm" onSubmit={updateSearch}>
               <input name="searchBar" className="searchBar" type="text" />
               <button className="searchBtn animated" type="submit" >
@@ -65,14 +69,14 @@ const App = () => {
           <div id="top">
             <form className="searchFprm topSearch" onSubmit={updateSearch}>
               <input name="searchBar" className="searchBar" type="text" />
-              
+
               <button className="searchBtn animated" type="submit" >
                 Search
     </button>
             </form>
-           
+
             <div className="resipesWrapper">
-           
+
               {
                 resipes &&
                 resipes.map((singleResepi, index) => (
@@ -95,7 +99,8 @@ const App = () => {
 
 
       <p>&#169; CMS - ChiccoMosheSerby</p>
-      
+      <InstallPWA />
+
     </div >
 
   )
